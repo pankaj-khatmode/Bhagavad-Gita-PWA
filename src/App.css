@@ -1,0 +1,53 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-xl);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-surface);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon-button {
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+}
+
+.icon-button:hover {
+  background-color: var(--color-border);
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-x: hidden;
+}
+
+/* Animations will be handled mostly by motion component, but general transitions here */
